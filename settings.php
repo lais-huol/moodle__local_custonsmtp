@@ -26,7 +26,7 @@ if ($hassiteconfig) {
     
     $ADMIN->add('localplugins',$page);
     $ADMIN->add('localplugins',new admin_externalpage('accountspage', 'Cadastro de Contas SMTP', "{$CFG->wwwroot}/local/custonsmtp/accounts.php"));
-    $ADMIN->add('localplugins',new admin_externalpage('accountspage', 'Envio de Emails', "{$CFG->wwwroot}/local/custonsmtp/envio.php"));
+    $ADMIN->add('localplugins',new admin_externalpage('mailsend', 'Envio de Emails', "{$CFG->wwwroot}/local/custonsmtp/envio.php"));
 
     
 }
